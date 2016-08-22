@@ -6,8 +6,6 @@
 import unittest
 
 from koans.about_asserts import AboutAsserts
-from koans.about_asserts import AboutVariables
-from koans.about_asserts import AboutOperators
 from koans.about_strings import AboutStrings
 from koans.about_none import AboutNone
 from koans.about_lists import AboutLists
@@ -19,8 +17,6 @@ def koans():
     suite = unittest.TestSuite()
     loader.sortTestMethodsUsing = None
     suite.addTests(loader.loadTestsFromTestCase(AboutAsserts))
-    suite.addTests(loader.loadTestsFromTestCase(AboutVariables))
-    suite.addTests(loader.loadTestsFromTestCase(AboutOperators))
     suite.addTests(loader.loadTestsFromTestCase(AboutStrings))
     suite.addTests(loader.loadTestsFromTestCase(AboutNone))
     suite.addTests(loader.loadTestsFromTestCase(AboutLists))
