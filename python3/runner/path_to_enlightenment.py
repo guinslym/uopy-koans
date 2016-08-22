@@ -6,25 +6,25 @@
 import unittest
 
 from koans.about_asserts import AboutAsserts
+from koans.about_asserts import AboutVariables
+from koans.about_asserts import AboutOperators
 from koans.about_strings import AboutStrings
 from koans.about_none import AboutNone
 from koans.about_lists import AboutLists
 from koans.about_list_assignments import AboutListAssignments
-from koans.about_string_manipulation import AboutStringManipulation
 from koans.about_control_statements import AboutControlStatements
-from koans.about_true_and_false import AboutTrueAndFalse
 
 def koans():
     loader = unittest.TestLoader()
     suite = unittest.TestSuite()
     loader.sortTestMethodsUsing = None
     suite.addTests(loader.loadTestsFromTestCase(AboutAsserts))
+    suite.addTests(loader.loadTestsFromTestCase(AboutVariables))
+    suite.addTests(loader.loadTestsFromTestCase(AboutOperators))
     suite.addTests(loader.loadTestsFromTestCase(AboutStrings))
     suite.addTests(loader.loadTestsFromTestCase(AboutNone))
     suite.addTests(loader.loadTestsFromTestCase(AboutLists))
     suite.addTests(loader.loadTestsFromTestCase(AboutListAssignments))
-    suite.addTests(loader.loadTestsFromTestCase(AboutStringManipulation))
     suite.addTests(loader.loadTestsFromTestCase(AboutControlStatements))
-    suite.addTests(loader.loadTestsFromTestCase(AboutTrueAndFalse))
 
     return suite

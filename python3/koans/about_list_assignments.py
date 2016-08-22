@@ -34,4 +34,3 @@ class AboutListAssignments(Koan):
         first_name, last_name = last_name, first_name
         self.assertEqual(__, first_name)
         self.assertEqual(__, last_name)
-
