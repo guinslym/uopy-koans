@@ -10,13 +10,13 @@ from runner.koan import *
 class AboutDictionaries(Koan):
     def test_creating_dictionaries(self):
         empty_dict = dict()
-        self.assertEqual(dict, type(empty_dict))
+        self.assertEqual(__, type(empty_dict))
         self.assertDictEqual({}, empty_dict)
         self.assertEqual(__, len(empty_dict))
 
     def test_dictionary_literals(self):
         empty_dict = {}
-        self.assertEqual(dict, type(empty_dict))
+        self.assertEqual(__, type(empty_dict))
         babel_fish = { 'one': 'uno', 'two': 'dos' }
         self.assertEqual(__, len(babel_fish))
 
