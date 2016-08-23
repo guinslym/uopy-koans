@@ -14,7 +14,7 @@ class AboutOperators(Koan):
 
     def test_multiple_assignments(self):
         """
-        multiple assignments
+        parallel assignments
         """
         a, b, c = 5, 6, 8
         self.assertEqual(__, b)
@@ -23,14 +23,14 @@ class AboutOperators(Koan):
         """
         Sometimes we will ask you to fill in the values
         """
-        self.assertEqual(5, 1 * 5)
-        self.assertEqual(4, 2 ** 2)
+        self.assertEqual(__, 1 * 5)
+        self.assertEqual(__, 2 ** 2)
 
-        self.assertEqual(2, 4 / 2)
-        self.assertEqual(1, 7 // 4)
+        self.assertEqual(__, 4 / 2)
+        self.assertEqual(__, 7 // 4)
 
-        self.assertEqual(1, 13 / 4)
-        self.assertEqual(1, 13 % 4)
+        self.assertEqual(__, 13 / 4)
+        self.assertEqual(__, 13 % 4)
 
     def test_increment_operator(self):
         """
@@ -74,6 +74,10 @@ class AboutOperators(Koan):
         self.assertTrue(number == 3)
 
         #change the value of the variable number
+        number = 3
+        self.assertTrue(number != 3)
+
+        #change the value of the variable number
         number = 53
         self.assertTrue(number < 3)
 
@@ -89,9 +93,6 @@ class AboutOperators(Koan):
         number = 2
         self.assertTrue(number > 3)
 
-        #change the value of the variable number
-        number = 3
-        self.assertTrue(number != 3)
 
     def test_membership_operators(self):
         """
