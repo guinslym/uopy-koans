@@ -44,27 +44,3 @@ class AboutAsserts(Koan):
         actual_value = 1 + 1
 
         self.assertEqual(expected_value, actual_value)
-
-
-    def test_that_sometimes_we_need_to_know_the_class_type(self):
-        """
-        What is in a class name?
-        """
-
-        # Sometimes we will ask you what the class type of an object is.
-        #
-        # For example, contemplate the text string "navel". What is its class type?
-        # The koans runner will include this feedback for this koan:
-        #
-        #   AssertionError: '-=> FILL ME IN! <=-' != <type 'str'>
-        #
-        # So "navel".__class__ is equal to <type 'str'>? No not quite. This
-        # is just what it displays. The answer is simply str.
-        #
-        # See for yourself:
-
-        self.assertEqual(__, type("navel")) # It's str, not <type 'str'>
-
-        # Need an illustration? More reading can be found here:
-        #
-        #   http://bit.ly/__class__
