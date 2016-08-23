@@ -9,19 +9,6 @@ from runner.koan import *
 
 class AboutLists(Koan):
 
-    def test_list_literals(self):
-        nums = list()
-        self.assertEqual([], nums)
-
-        nums[0:] = [1]
-        self.assertEqual([1], nums)
-
-        nums[1:] = [2]
-        self.assertListEqual([1, __], nums)
-
-        nums.append(333)
-        self.assertListEqual([1, 2, __], nums)
-
     def test_accessing_list_elements(self):
         noms = ['peanut', 'butter', 'and', 'jelly']
 
@@ -30,7 +17,12 @@ class AboutLists(Koan):
         self.assertEqual(__, noms[-1])
         self.assertEqual(__, noms[-3])
 
+
     def test_slicing_lists(self):
+        """
+        Use a colon to slice a list
+        # list = [start:<end:step]
+        """
         noms = ['peanut', 'butter', 'and', 'jelly']
 
         self.assertEqual(__, noms[0:1])
@@ -42,6 +34,9 @@ class AboutLists(Koan):
         self.assertEqual(__, noms[5:0])
 
     def test_slicing_to_the_edge(self):
+        """
+        # list = [start:<end:step]
+        """
         noms = ['peanut', 'butter', 'and', 'jelly']
 
         self.assertEqual(__, noms[2:])
