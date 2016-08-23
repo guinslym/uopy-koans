@@ -22,6 +22,8 @@ class AboutStrings(Koan):
         self.assertEqual(__, isinstance(string, str))
 
     def test_raw_strings_are_also_strings(self):
+        # print('1 + 1 =\n 42')
+        # print(r'1 + 1 =\n 42')
         string = r"Konnichi wa, world!"
         self.assertEqual(__, isinstance(string, str))
 
