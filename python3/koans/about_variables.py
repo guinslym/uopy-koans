@@ -5,7 +5,7 @@ from runner.koan import *
 
 class AboutVariables(Koan):
 
-    def test_that_sometimes_we_need_to_know_the_class_type(self):
+    def test_that_sometimes_we_need_to_know_the_data_type(self):
         """
         What is in a class name?
         """
@@ -22,7 +22,7 @@ class AboutVariables(Koan):
         #
         # See for yourself:
 
-        self.assertEqual(__, "navel".__class__) # It's str, not <type 'str'>
+        self.assertEqual(__, type("navel")) # It's str, not <type 'str'>
 
         # Need an illustration? More reading can be found here:
         #
@@ -44,9 +44,9 @@ class AboutVariables(Koan):
         # is just what it displays. The answer is simply str.
         #
         # See for yourself:
-        my_number = 4
+        nb_of_cars = 4
 
-        self.assertEqual(__, my_number.__class__) # It's int, not <type 'int'>
+        self.assertEqual(__, type(nb_of_cars)) # It's int, not <type 'int'>
 
         # Need an illustration? More reading can be found here:
         #
@@ -69,7 +69,7 @@ class AboutVariables(Koan):
         #
         # See for yourself:
 
-        self.assertEqual(__, "hello world".__class__) # It's str, not <type 'str'>
+        self.assertEqual(__, type("hello world")) # It's str, not <type 'str'>
 
         # Need an illustration? More reading can be found here:
         #
@@ -93,7 +93,7 @@ class AboutVariables(Koan):
         # See for yourself:
         student = True
 
-        self.assertEqual(__, student.__class__) # It's bool, not <type 'bool'>
+        self.assertEqual(__, type(student)) # It's bool, not <type 'bool'>
 
         # Need an illustration? More reading can be found here:
         #
