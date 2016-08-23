@@ -37,7 +37,7 @@ class AboutOperators(Koan):
         self.assertTrue('hello' in 'world')
         self.assertTrue('hello' not in 'hello world')
 
-    def test_identiy_operators(self):
+    def test_identity_operators(self):
         """
         Sometimes we will ask you to fill in the values
         """
