@@ -23,11 +23,14 @@ class AboutOperators(Koan):
         """
         Sometimes we will ask you to fill in the values
         """
-        self.assertEqual(__, 1 * 5)
-        self.assertEqual(__, 2 ** 2)
-        self.assertEqual(__, 4 / 2)
-        self.assertEqual(__, 13 % 4)
-        self.assertEqual(__, 7 // 4)
+        self.assertEqual(5, 1 * 5)
+        self.assertEqual(4, 2 ** 2)
+
+        self.assertEqual(2, 4 / 2)
+        self.assertEqual(1, 7 // 4)
+
+        self.assertEqual(1, 13 / 4)
+        self.assertEqual(1, 13 % 4)
 
     def test_increment_operator(self):
         """
@@ -63,39 +66,66 @@ class AboutOperators(Koan):
         """
         These operators compare the values on either sides
         of them and decide the relation among them.
-        They are also called Relational operators.
+
+        Comparaison operator always return a Boolean (True/False)
         """
-        self.assertTrue(__ == 3)
-        self.assertTrue(__ < 3)
-        self.assertTrue(__ <= 3)
-        self.assertTrue(__ >= 3)
-        self.assertTrue(__ > 3)
-        self.assertTrue(__ != 3)
-        self.assertTrue(__ <> 3)
+        #change the value of the variable number
+        number = 53
+        self.assertTrue(number == 3)
+
+        #change the value of the variable number
+        number = 53
+        self.assertTrue(number < 3)
+
+        #change the value of the variable number
+        number = 53
+        self.assertTrue(number <= 3)
+
+        #change the value of the variable number
+        number = 2
+        self.assertTrue(number >= 3)
+
+        #change the value of the variable number
+        number = 2
+        self.assertTrue(number > 3)
+
+        #change the value of the variable number
+        number = 3
+        self.assertTrue(number != 3)
 
     def test_membership_operators(self):
         """
         Python’s membership operators test for membership
          in a sequence, such as strings, lists, or tuples.
+
+        Membership operators always return a Boolean (True/False)
         """
+        #change the value of the variable university
         university = 'Morisset'
         self.assertTrue('library' in university )
 
+        #change the value of the variable countries
         countries = ['USA', 'Nepal', 'Albany']
-        self.assertTrue('hello' in countries)
+        self.assertTrue('Canada' in countries)
 
+        #change the value of the variable greeting
         greeting = 'hello world'
         self.assertTrue('hello' not in greeting)
 
     def test_identity_operators(self):
         """
         Identity operators compare the memory locations of two objects
+
+        Identity operators always return a Boolean (True/False)
         """
 
+        #change the value of the variable 'director'
         director = False
         self.assertTrue(director is True)
 
+        #change the value of the variable 'my_program'
         course = "Geography"
+
         my_program = __
         self.assertTrue(__ is course)
 
@@ -103,11 +133,15 @@ class AboutOperators(Koan):
         """
         Test operator precedence
         """
+        #change the value of the variable 'athlete'
+        athlete = True
+        self.assertTrue(False is athlete)
 
-        self.assertTrue(False is True)
 
         statement = False is False is False
-        self.assertTrue(__)
+        #replace 0 by the value of the variable 'statement'
+        self.assertTrue(0)
 
         statement_2 = (False is False) is False
-        self.assertTrue(__)
+        #replace 1 by the value of the variable 'statement'
+        self.assertFalse(1)
