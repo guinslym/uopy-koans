@@ -8,8 +8,8 @@ import unittest
 from koans.about_asserts import AboutAsserts
 from koans.about_variables import AboutVariables
 from koans.about_operators import AboutOperators
-from koans.about_strings import AboutStrings
 from koans.about_none import AboutNone
+from koans.about_strings import AboutStrings
 from koans.about_lists import AboutLists
 from koans.about_list_assignments import AboutListAssignments
 from koans.about_control_statements import AboutControlStatements
