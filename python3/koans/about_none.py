@@ -8,7 +8,9 @@
 from runner.koan import *
 
 class AboutNone(Koan):
-
+    '''
+    None is used to represent the absence of a value
+    '''
     def test_none_is_universal(self):
         "There is only one None"
         self.assertEqual(____, None is None)
