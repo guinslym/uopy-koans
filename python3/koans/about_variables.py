@@ -90,4 +90,4 @@ class AboutVariables(Koan):
         # See for yourself:
         student = True
 
-        self.assertEqual(str, type(student)) # It's bool, not <type 'bool'>
+        self.assertEqual(bool, type(student)) # It's bool, not <type 'bool'>
