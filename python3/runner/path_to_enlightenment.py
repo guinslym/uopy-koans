@@ -14,6 +14,9 @@ from koans.about_lists import AboutLists
 from koans.about_list_assignments import AboutListAssignments
 from koans.about_control_statements import AboutControlStatements
 from koans.about_dictionaries import AboutDictionaries
+from koans.about_string_manipulation import AboutStringManipulation
+from koans.about_true_and_false import AboutTrueAndFalse
+from koans.about_comprehension import AboutComprehension
 
 
 def koans():
@@ -29,5 +32,8 @@ def koans():
     suite.addTests(loader.loadTestsFromTestCase(AboutListAssignments))
     suite.addTests(loader.loadTestsFromTestCase(AboutControlStatements))
     suite.addTests(loader.loadTestsFromTestCase(AboutDictionaries))
+    suite.addTests(loader.loadTestsFromTestCase(AboutStringManipulation))
+    suite.addTests(loader.loadTestsFromTestCase(AboutTrueAndFalse))
+    suite.addTests(loader.loadTestsFromTestCase(AboutComprehension))
 
     return suite

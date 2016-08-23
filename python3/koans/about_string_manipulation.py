@@ -17,14 +17,6 @@ class AboutStringManipulation(Koan):
         string = "The values are {1}, {0}, {0} and {1}!".format(value1, value2)
         self.assertEqual(__, string)
 
-    def test_any_python_expression_may_be_interpolated(self):
-        import math # import a standard python module with math functions
-
-        decimal_places = 4
-        string = "The square root of 5 is {0:.{1}f}".format(math.sqrt(5),
-            decimal_places)
-        self.assertEqual(__, string)
-
     def test_you_can_get_a_substring_from_a_string(self):
         string = "Bacon, lettuce and tomato"
         self.assertEqual(__, string[7:10])
@@ -42,26 +34,6 @@ class AboutStringManipulation(Koan):
         words = string.split()
         self.assertListEqual([__, __, __], words)
 
-    def test_strings_can_be_split_with_different_patterns(self):
-        import re #import python regular expression library
-
-        string = "the,rain;in,spain"
-        pattern = re.compile(',|;')
-
-        words = pattern.split(string)
-
-        self.assertListEqual([__, __, __, __], words)
-
-        # Pattern is a Python regular expression pattern which matches ',' or ';'
-
-    def test_raw_strings_do_not_interpret_escape_characters(self):
-        string = r'\n'
-        self.assertNotEqual('\n', string)
-        self.assertEqual(__, string)
-        self.assertEqual(__, len(string))
-
-        # Useful in regular expressions, file paths, URLs, etc.
-
     def test_strings_can_be_joined(self):
         words = ["Now", "is", "the", "time"]
         self.assertEqual(__, ' '.join(words))
@@ -72,3 +44,11 @@ class AboutStringManipulation(Koan):
         self.assertEqual(__, 'TimBot'.lower())
         self.assertEqual(__, 'guido van rossum'.title())
         self.assertEqual(__, 'ToTaLlY aWeSoMe'.swapcase())
+
+    def test_raw_strings_do_not_interpret_escape_characters(self):
+        string = r'\n'
+        self.assertNotEqual('\n', string)
+        self.assertEqual(__, string)
+        self.assertEqual(__, len(string))
+
+        # Useful in regular expressions, file paths, URLs, etc.

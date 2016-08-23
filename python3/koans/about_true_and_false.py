@@ -26,7 +26,6 @@ class AboutTrueAndFalse(Koan):
         self.assertEqual(__, self.truth_value([]))
         self.assertEqual(__, self.truth_value(()))
         self.assertEqual(__, self.truth_value({}))
-        self.assertEqual(__, self.truth_value(set()))
 
     def test_blank_strings_are_treated_as_false(self):
         self.assertEqual(__, self.truth_value(""))
