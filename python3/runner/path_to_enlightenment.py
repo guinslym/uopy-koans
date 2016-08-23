@@ -13,6 +13,8 @@ from koans.about_none import AboutNone
 from koans.about_lists import AboutLists
 from koans.about_list_assignments import AboutListAssignments
 from koans.about_control_statements import AboutControlStatements
+from koans.about_dictionaries import AboutDictionaries
+
 
 def koans():
     loader = unittest.TestLoader()
@@ -26,5 +28,6 @@ def koans():
     suite.addTests(loader.loadTestsFromTestCase(AboutLists))
     suite.addTests(loader.loadTestsFromTestCase(AboutListAssignments))
     suite.addTests(loader.loadTestsFromTestCase(AboutControlStatements))
+    suite.addTests(loader.loadTestsFromTestCase(AboutDictionaries))
 
     return suite
