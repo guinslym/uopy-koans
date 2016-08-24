@@ -21,6 +21,10 @@ class AboutStringManipulation(Koan):
         string = "Bacon, lettuce and tomato"
         self.assertEqual(__, string[7:10])
 
+    def test_multiply_a_string(self):
+        string = "*" * 10
+        self.assertEqual(__, string)
+
     def test_you_can_get_a_single_character_from_a_string(self):
         string = "Bacon, lettuce and tomato"
         self.assertEqual(__, string[1])
@@ -52,3 +56,22 @@ class AboutStringManipulation(Koan):
         self.assertEqual(__, len(string))
 
         # Useful in regular expressions, file paths, URLs, etc.
+    def test_insertions(self):
+        knight = ['you', 'shall', 'pass']
+        knight.insert(2, 'not')
+        self.assertEqual(__, knight)
+
+        knight.insert(0, 'Arthur')
+        self.assertEqual(__, knight)
+
+        knight.append('or')
+        self.assertEqual(__, knight)
+
+    def test_lists_and_string(self):
+        countries = ['Canada', 'USA', 'Canada']
+        result = countries.count('Canada')
+        self.assertEqual(__, result)
+
+        countries = 'Canada'
+        result = countries.count('a')
+        self.assertEqual(__, result)
