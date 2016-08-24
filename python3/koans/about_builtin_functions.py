@@ -7,20 +7,52 @@ from runner.koan import *
 class AboutBuiltinFunctions(Koan):
 
 
-    def test_creating_lists_with_list_comprehensions(self):
+    def test_len_returns_a_integer(self):
+        #>>> help(len)
         feast = ['lambs', 'sloths', 'orangutans', 'breakfast cereals',
             'fruit bats']
 
-        comprehension = [delicacy.capitalize() for delicacy in feast]
+        self.assertEqual(__, 5)
 
-        self.assertEqual(__, comprehension[0])
-        self.assertEqual(__, comprehension[2])
+    def test_dir_returns_a_list_of_method_of_an_object(self):
+        #>>> help(dir)
+        temperature = 'wheather'
 
-    def test_filtering_lists_with_list_comprehensions(self):
-        feast = ['spam', 'sloths', 'orangutans', 'breakfast cereals',
-            'fruit bats']
+        self.assertTrue(__ >= len(dir(wheather)))
 
-        comprehension = [delicacy for delicacy in feast if len(delicacy) > 6]
+    def test_max_returns_the_maximum_value_of_a_list(self):
+        #>>> help(max)
+        temperature = [-78, 35,20,-5,-7]
 
-        self.assertEqual(__, len(feast))
-        self.assertEqual(__, len(comprehension))
+        self.assertEqual(__, max(temperature))
+        self.assertEqual(__, min(temperature))
+
+    def test_range_returns_a_list(self):
+        #>>> help(range)
+        #>>> range(start,<end,step)
+        temperature = range(25,29)
+
+        self.assertEqual(__, type(temperature))
+        self.assertEqual(__, range(temperature))
+
+        temperature = range(25,29,2)
+        self.assertEqual(__, range(temperature))
+
+    def test_list_returns_a_list(self):
+        #>>> help(list)
+        temperature = 'weather'
+
+        self.assertEqual(__, list(temperature))
+
+    def test_int_returns_a_int(self):
+        #>>> help(int)
+        temperature = False
+        self.assertEqual(__, int(temperature))
+
+        temperature = True
+        self.assertEqual(__, int(temperature))
+
+    def test_str_returns_a_str(self):
+        #>>> help(str)
+        temperature = 34
+        self.assertEqual(__, str(temperature))
