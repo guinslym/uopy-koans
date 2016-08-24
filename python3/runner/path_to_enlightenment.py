@@ -17,6 +17,7 @@ from koans.about_dictionaries import AboutDictionaries
 from koans.about_string_manipulation import AboutStringManipulation
 from koans.about_true_and_false import AboutTrueAndFalse
 from koans.about_comprehension import AboutComprehension
+from koans.about_builtin_functions import AboutBuiltinFunctions
 
 
 def koans():
@@ -35,5 +36,6 @@ def koans():
     suite.addTests(loader.loadTestsFromTestCase(AboutStringManipulation))
     suite.addTests(loader.loadTestsFromTestCase(AboutTrueAndFalse))
     suite.addTests(loader.loadTestsFromTestCase(AboutComprehension))
+    suite.addTests(loader.loadTestsFromTestCase(AboutBuiltinFunctions))
 
     return suite
